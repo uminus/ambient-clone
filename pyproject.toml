@@ -6,8 +6,24 @@ authors = ["uminus <ucon.ucon@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = "^3.10"
+tinyflux = "^0.4.0"
+tinydb = "^4.8.0"
+fastapi = "^0.103.1"
+pydantic = "^2.2.1"
+python-multipart = "^0.0.6"
+python-jose = {extras = ["cryptography"], version = "^3.3.0"}
+passlib = {extras = ["bcrypt"], version = "^1.7.4"}
+pydantic-settings = "^2.0.3"
 
+[tool.poetry.group.dev.dependencies]
+uvicorn = "^0.23.2"
+black = "^23.9.0"
+ruff = "^0.0.287"
+mypy = "^1.5.1"
+
+[tool.ruff]
+select = ["C9", "E", "F", "W", "I"]
 
 [build-system]
 requires = ["poetry-core"]

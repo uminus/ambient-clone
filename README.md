@@ -5,7 +5,7 @@ A working [Ambient](https://ambidata.io/) clone using [TinyFlux](https://github.
 [Ambient](https://ambidata.io/) is an IoT platform for data collection and visualization.
 
 ## features
-- [ ] User management
+- [x] User management
 - [ ] Push data
   * [ ] MQTT support
 - [ ] Query data
@@ -13,3 +13,9 @@ A working [Ambient](https://ambidata.io/) clone using [TinyFlux](https://github.
 
 ## diagram
 ![diagram](./docs/diagram.svg)
+
+## run
+```shell
+$ poetry install --with dev
+$ poetry run uvicorn ambient_clone.main:app --reload
+```
