@@ -16,5 +16,3 @@ if settings.tsdb_file is None:
     tsdb = TinyFlux(storage=TinyFluxDBMemoryStrage)
 else:
     tsdb = TinyFlux(settings.tsdb_file)
-
-Measurement = tsdb.measurement("tsdb")

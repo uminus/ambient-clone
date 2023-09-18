@@ -6,7 +6,7 @@ A working [Ambient](https://ambidata.io/) clone using [TinyFlux](https://github.
 
 ## features
 - [x] User management
-- [ ] Push data
+- [x] Push data
   * [ ] MQTT support
 - [ ] Query data
 - [ ] Simple Dashboard
